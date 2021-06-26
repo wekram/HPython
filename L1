@@ -19,3 +19,4 @@ print(duration // (d // m), 'часа', 6500 // h, 'мин', 6500 % m, 'сек')
 print('duration = 259200')
 duration = 259200
 print((duration // d), 'дня', d % m, 'часов', duration % h, 'мин', duration % m, 'сек')
+
