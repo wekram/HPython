@@ -1,0 +1,38 @@
+# Задание 1. Я поняла задание как, что нужно выяснить результат выражений относится к целому числу или нет.
+num_one = 15 * 3
+print(type(num_one))
+
+num_two = 15 / 3
+print(type(num_two))
+
+num_three = 15 // 3
+print(type(num_three))
+
+num_four = 15 ** 3
+print(type(num_four))
+
+# Задание 2
+values = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
+
+def get_sign(x):
+    if x[0] in '+-':
+        return x[0]
+
+a = 0
+while a < len(values):
+    sign = get_sign(values[a])
+    if values[a].isdigit() or (sign and values[a][1:].isdigit()):
+        if sign:
+            values[a] = sign + values[a][a:].zfill(2)
+        else:
+            values[a] = values[a].zfill(2)
+
+        values.insert(a, '"')
+        values.insert(a + 2, '"')
+        a += 2
+
+    a += 1
+
+print(values)
+
+#Остальные задания в процессе

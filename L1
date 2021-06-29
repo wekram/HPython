@@ -19,3 +19,15 @@ print(duration // (d // m), 'часа', 6500 // h, 'мин', 6500 % m, 'сек')
 print('duration = 259200')
 duration = 259200
 print((duration // d), 'дня', d % m, 'часов', duration % h, 'мин', duration % m, 'сек')
+
+#задание 3
+
+print(list(range(20)))
+for number in range(1, 21, 1):
+    if number == 1:
+        print(number, 'процент')
+    elif number >= 2 and number < 5:
+            print(number, 'процента')
+    else:
+        print(number, 'процентов')
+    
